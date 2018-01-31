@@ -4,7 +4,7 @@ let degree = 0;
 let timer;
 
 function clockTick() {
-    degree++;
+    degree = degree + 6;
     clockArrow.style.transform = "rotate(" + degree + "deg)";
     timer = setTimeout(function(){
         clockTick()
